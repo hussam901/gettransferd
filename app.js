@@ -20,7 +20,7 @@ button.addEventListener("click",function (event){
     const company = summe * 14/100 ;
     summe += company;
     console.log(dieselCost,autoBenCost,timeCost,company,summe);
-    summeHead.textContent = "the Result is :" + summe + " €";
+    summeHead.textContent = "the Result is :" + summe.toFixed(2) + " €";
     if(firsttime){
         firsttime = false ;
         const costDetiles = document.createElement("p");
