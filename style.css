@@ -1,0 +1,36 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+header {
+    background: rgb(42, 136, 42);
+    padding: 2rem;
+    margin: 2rem;
+    color: rgba(150, 7, 7, 0.951);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    margin: 2rem;
+    justify-content: space-between;
+    height: 60%;
+}
+
+button {
+    padding: 1rem 2rem;
+    background: rgb(129, 94, 246);
+    border-radius: 8px;
+}
+
+button:hover {
+    cursor: pointer;
+    background: rgb(24, 24, 186);
+    color: red;
+}
+
