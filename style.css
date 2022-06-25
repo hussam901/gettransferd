@@ -26,6 +26,7 @@ form {
 button {
     padding: 1rem 2rem;
     background: rgb(129, 94, 246);
+    color: rgb(74, 2, 2);
     border-radius: 8px;
 }
 
