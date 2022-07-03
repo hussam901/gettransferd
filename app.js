@@ -17,8 +17,11 @@ button.addEventListener("click",function (event){
     const autoBenCost = distanceVal * 2 * autoBen ;
     const timeCost = timeVal * 2 * 15 / 60 ;
     let summe = dieselCost + autoBenCost + timeCost ;
-    const company = summe * 14/100 ;
-    summe += company;
+    summe = 100 * summe /85.5 ;
+    const company = summe * 14.5/100 ;
+    if (distanceVal<=40){
+        summe += 2;
+    }
     console.log(dieselCost,autoBenCost,timeCost,company,summe);
     summeHead.textContent = "the Result is :" + summe.toFixed(2) + " €";
     if(firsttime){
